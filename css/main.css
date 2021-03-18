@@ -1,0 +1,418 @@
+:root{
+    --yellow-color: #F1E618;
+    --blue-color: #0085FF;
+    --text-color: #333333;
+    --text-color-000: #000000;
+    --text-input: #D1D1D1;
+    --text-sim: #151515;
+    --text-price: #FF0000;
+    --text-white: #FFFFFF;
+    --height-menu: 3.875rem;
+}
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-size: 0.875rem !important;
+}
+a {
+    text-decoration: none
+}
+
+ul, ol {
+    list-style: none
+}
+
+.clr {
+    clear: both
+}
+
+p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    text-rendering: geometricPrecision
+}
+.fs-24{
+    font-size: 1.5rem !important;
+}
+.fs-20{
+    font-size: 1.25rem !important;
+}
+.fs-18{
+    font-size: 1.125rem !important;
+}
+.fs-17{
+    font-size: 1.0625rem !important;
+}
+.fs-16{
+    font-size: 1rem !important;
+}
+.fs-15{
+    font-size: 0.9375rem !important;
+}
+.fs-14{
+    font-size: 	0.875rem!important;
+}
+.fs-13{
+    font-size: 0.8125rem !important;
+}
+
+.fw500{
+    font-weight: 500 !important;
+}
+.fw600{
+    font-weight: 600 !important;
+}
+.fw700{
+    font-weight: 700 !important;
+}
+.ovl-sim{
+    color: #F1E618;
+}
+.cl-4545{
+    color: #454545;
+}
+.cl-5857{
+    color: #585757;
+}
+.cl-7575{
+    color: #757575;
+}
+.cl-7E82{
+    color: #7E8281;
+}
+.cl-0085{
+    color: var(--blue-color) !important;
+}
+.cl-3333{
+    color: var(--text-color);
+}
+.cl-0000{
+    color: var(--text-color-000);
+}
+.cl-D1D1{
+    color: var(--text-input);
+}
+.cl-1515{
+    color: var(--text-sim) !important;
+}
+.cl-FF00{
+    color: var(--text-price);
+}
+.cl-FFFF{
+    color: var(--text-white);
+}
+.cl-8C8C{
+    color: #8C8C8C;
+}
+.bg-menu{
+    background: var(--yellow-color);
+    padding: 0 0 !important;
+}
+.bg-search{
+    background: var(--blue-color);
+}
+.bg-white{
+    background: #FFFFFF;
+}
+header #header-menu > ul > li > a{
+    text-decoration: none;
+} 
+header #header-menu > ul > li > a > i{
+    font-size: 1.125rem !important;
+}
+#nav{
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+#nav > li{
+    min-width: 5.9375rem;
+    border-right: 0.0625rem solid white;
+    padding: 0.625rem 0;
+}
+.header-search{
+    flex: 1;
+}
+.header-search i{
+    position: absolute!important;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.625rem;
+}
+.logo-list .logo-item img{
+    max-width: 100%;
+    width: 97%;
+    height: 2.5rem;
+}
+.dropdown-item .badge{
+    color: red;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.dropdown-filter{
+    min-width: 31.25rem;
+}
+.filter-item{
+    width: 31%;
+    height: 2.1875rem;
+}
+.all-cursor{
+    cursor: pointer;
+}
+.mobi{
+    color: #134A9F;
+}
+.fone{
+    color: #E12728;;
+}
+.vina{
+    color: #308BE3;
+}
+.itelecom{
+    color: #060606;
+}
+.vnmb{
+    color: #EA8932;
+}
+.viettel{
+    color: #01918C;
+}
+.gmobile{
+    color: #F1B82C;
+}
+.reddi{
+    color: #FF0000;
+}
+.border-filter{
+    border: 0.0625rem solid #0084ff3a !important;
+}
+.change-border{
+    border: 0.0625rem solid var(--blue-color) !important;
+}
+.cl-blue{
+    color: var(--blue-color);
+}
+.change-cl input::placeholder{
+    color: var(--blue-color);
+    opacity: 0.95;
+}
+.btn-filter-tim{
+    width: 7.5rem;
+    height: 2rem;
+    background-color: #D1D1D1;
+}
+.btn-search{
+    width: 100%;
+    height: 100%;
+}
+.box-1, .box-2, .box-3, .box-4, .box-5{
+    margin-left: -0.75rem;
+    margin-right: -0.125rem;
+    padding: 0 0.8125rem;
+}
+.border-danhmuc{
+    border: 0.0625rem solid rgba(0, 133, 255, 0.1);
+}
+.list-danhmuc .list-item > a:hover{
+    border: 0.0625rem solid #0085FF !important;
+    border-radius: 0.1875rem !important;
+    color: #0085FF !important;
+}
+.blog-1{
+    margin: 0px -12px;
+}
+.blog-1 a .blog-img{
+    width: 100%;
+    max-width: 100%;
+}
+.blog-1 .blog-ovl{
+    left: 0;
+    right: 0;
+    top: 65%;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 160.75%);
+}
+.list-gr .list-gr-item:hover a{
+    color: #0085FF !important;
+}
+.title .title-icon{
+    background: rgba(241, 230, 24, 0.5);
+    border-radius: 50%;
+    max-width: 100%;
+    width: 3rem;
+    height: 3rem;
+}
+.prd-list .prd-item .gmobile{
+    background-image: url('../imgs/logofullvin/gmobile.svg');
+}
+.prd-list .prd-item .reddi{
+    background: url(../imgs/logofullvin/reddi.svg) no-repeat;
+}
+.prd-list .prd-item .viettel{
+    background-image: url('../imgs/logofullvin/viettel.svg');
+}
+.prd-list .prd-item .vietnamobile{
+    background-image: url('../imgs/logofullvin/vietnamobile.svg');
+}
+.prd-list .prd-item .itelecom{
+    background-image: url('../imgs/logofullvin/itelecom.svg');
+}
+.prd-list .prd-item .vinaphone{
+    background-image: url('../imgs/logofullvin/vinaphone.svg');
+}
+.prd-list .prd-item .mobifone{
+    background-image: url('../imgs/logofullvin/mobifone.svg');
+}
+.gmobile, .reddi, .viettel, .vietnamobile, .itelecom, .vinaphone, .mobifone{
+    max-width: 100%;
+    width: 60%;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+}
+.prd-list .gmobile, .reddi, .viettel, .vietnamobile, .itelecom, .vinaphone, .mobifone{
+    margin-left: -0.3125rem;
+}
+.prd-list .prd-item{
+    width: 24%;
+}
+.prd-list .prd-ovl{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #151515;
+    opacity: 0.8;
+    display: none;
+}
+.prd-list .prd-item:hover .prd-ovl{
+    display: flex;
+}
+.btn-more{
+    background: #0085FF;
+    border-radius: 0.1875rem;
+    width: 6.9375rem;
+    height: 2rem;
+}
+.prd-list{
+    padding-bottom: 1rem;
+}
+.footer-menu > li{
+    line-height: 1.8rem;
+}
+.footer-menu li .footerzalo{
+    height: 1.875rem    ;
+    width: 5.4375rem;
+    background: #2196F3;
+    display: block;
+    border-radius: 0.1875rem;
+}
+.title-right, .title-left{
+    margin-left: -0.6875rem;
+}
+.bg-nosim{
+    background: #F4F4F4 !important;
+}
+.bg-nosim i{
+    color: #7E8281;
+}
+.nosim-title{
+    box-shadow: 0 0.25rem 0.75rem rgba(228, 224, 9, 0.1), 0 0.375rem 0.375rem rgba(201, 188, 5, 0.1);
+}
+.gohome{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.8rem;
+}
+.circle-blue{
+    background: #0085FF;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+}
+.circle-payment{
+    background: rgb(248,243,139);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+}
+.separate:before{
+    content: "";
+    background: #DFDFDF;
+    width: 22.1875rem;
+    height: 0.03125rem;
+    display: block;
+    box-sizing: border-box;
+}
+.bg-recei{
+    background: #F2F2F2;
+}
+.thanh-toan, .tai-khoan{
+    padding-left: 4.0625rem;
+}
+.order-info{
+    margin-left: 4rem;
+}
+.btn-order{
+    height: 3.5rem;
+    width: 12.75rem;
+}
+.form-order{
+    margin-left: 4rem;
+}
+h3.blog-title{
+    line-height: 1rem !important;
+    margin-top: 0.375rem;
+}
+.blog-item .blog-des{
+    color: #585757;
+}
+.blog-item .timeup{
+    color: #757575;
+}
+.list-blog li::before {
+    content: "\2022";
+    color: #0085FF;
+    font-weight: bold;
+    width: 0.8em;
+}
+.border-new{
+    border-bottom: 1px solid rgba(11, 11, 11, 0.07);
+}
+.border-new:last-child{
+    border-bottom: none;
+}
+.sepa-xt::before{
+    content: "";
+    background: #454545;
+    width: 4.1875rem;
+    height: 0.0625rem;
+    display: block;
+    box-sizing: border-box;
+}
+.xemthem .list-xemthem a:hover{
+    color: #FF0000 !important;
+}
+.bg-like{
+    background: #005EB5 !important;
+}
+.bg-face{
+    background: #F5F5F5 !important;
+}
+.bg-key{
+    background: #0085FF;
+}
+.bg-sale{
+    background: #F0F8FF;
+}
+/* Mobile */
+.body_mobile 
