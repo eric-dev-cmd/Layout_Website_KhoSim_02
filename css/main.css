@@ -414,5 +414,101 @@ h3.blog-title{
 .bg-sale{
     background: #F0F8FF;
 }
+/* .hide-pc{
+    display: none;
+} */
 /* Mobile */
-.body_mobile 
+.body_mobile #header-menu .bg-menu{
+    order: 2;
+}
+.body_mobile #header-menu .bg-search{
+    order: 1;
+    padding: 0.5rem 0.5625rem;
+}
+.body_mobile .mobile-txtsim{
+    display: none;
+}
+.body_mobile .header-category i{
+    color: #F1E618;
+    font-size: 1.5rem;
+}
+.body_mobile .header-search input[type="text"]{
+    border-radius: none;
+}
+.body_mobile .header-search{
+    padding-left: 0.375rem;
+}
+.body_mobile .menu-list li i{
+    display: none;
+}
+.body_mobile .menu-list{
+    height: 2rem;
+    overflow-x: auto;
+}
+.body_mobile .menu-list::-webkit-scrollbar {
+    display: none;
+}
+.body_mobile .menu-list li{
+    position: relative;
+    min-width: 6.125rem;
+}
+.body_mobile .menu-list li br{
+    display: none;
+}
+.body_mobile .menu-list li a{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.body_mobile .mobile-mt-0{
+    margin-top: 0 !important;
+}
+.body_mobile .mb-title{
+    margin-bottom: 0.1875rem !important;
+    margin-top: -0.375rem !important;
+}
+.body_mobile .mb-title .mb-title-sub{
+    text-align: justify !important;
+    margin-bottom: 0 !important;
+}
+.body_mobile .logo-list{
+    margin-left: -20px !important;
+    margin-bottom: 0;
+    height: 3.0625rem;
+    min-width: 62.5rem;
+    overflow-x: auto !important;
+}
+.body_mobile .price-list{
+    display: none !important;
+}
+.body_mobile .mobile-mt-0 div.bg-white{
+    padding-bottom: 0 !important;
+}
+.body_mobile .mobile-mt-0 div.bg-white .mb-title-sub{
+    margin-bottom: 0;
+}
+.body_mobile .prd-list .prd-item{
+    width: 49%;
+}
+.body_mobile .main-1{
+    order: 1 !important;
+}
+.body_mobile .main-2{
+    order: 2 !important;
+}
+.body_mobile .hide{
+    display: none;
+}
+.body_mobile .filter-item{
+    width: 30% !important;
+}
+.body_mobile .border-top-hr{
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+}
+.body_mobile .bg-menu{
+    /* margin-top: 3.125rem; */
+}
+
