@@ -77,6 +77,9 @@ p {
 .ovl-sim{
     color: #F1E618;
 }
+.cl-yellow{
+    color: var(--yellow-color);
+}
 .cl-4545{
     color: #454545;
 }
@@ -99,7 +102,7 @@ p {
     color: var(--text-color-000);
 }
 .cl-D1D1{
-    color: var(--text-input);
+    color: var(--text-input) !important;
 }
 .cl-1515{
     color: var(--text-sim) !important;
@@ -111,7 +114,7 @@ p {
     color: var(--text-white);
 }
 .cl-8C8C{
-    color: #8C8C8C;
+    color: #8C8C8C !important;
 }
 .bg-menu{
     background: var(--yellow-color);
@@ -122,6 +125,9 @@ p {
 }
 .bg-white{
     background: #FFFFFF;
+}
+.bg-F5F5{
+    background: #F5F5F5;
 }
 header #header-menu > ul > li > a{
     text-decoration: none;
@@ -139,6 +145,46 @@ header #header-menu > ul > li > a > i{
     border-right: 0.0625rem solid white;
     padding: 0.625rem 0;
 }
+#nav-img .menu-item{
+    flex-shrink: 0;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+.img-item .img-mobi, .img-vietnam,
+.img-vina, .img-viettel, .img-itele,
+.img-gmobi, .img-reddi
+{
+    max-width: 100%;
+    width: 9.375rem;
+    height: 2.0625rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+.img-mobi{
+    background-image: url('../imgs/logosquare/mobiphone-01.svg');
+}
+.img-vietnam{
+    background-image: url('../imgs/logosquare/vietnamobile-01.svg');
+}
+.img-vina{
+    background-image: url('../imgs/logosquare/vinaphone-01.svg');
+}
+.img-viettel{
+    background-image: url('../imgs/logosquare/viettel.svg');
+}
+.img-itele{
+    background-image: url('../imgs/logosquare/indochina-01.svg');
+}
+.img-gmobi{
+    background-image: url('../imgs/logosquare/mobile.svg');
+}
+.img-reddi{
+    background-image: url('../imgs/logosquare/reddi-01.svg');
+}
+#nav-img li{
+    width: 9.5rem;
+}
 .header-search{
     flex: 1;
 }
@@ -147,11 +193,6 @@ header #header-menu > ul > li > a > i{
     top: 50%;
     transform: translateY(-50%);
     right: 0.625rem;
-}
-.logo-list .logo-item img{
-    max-width: 100%;
-    width: 97%;
-    height: 2.5rem;
 }
 .dropdown-item .badge{
     color: red;
@@ -164,6 +205,11 @@ header #header-menu > ul > li > a > i{
 .filter-item{
     width: 31%;
     height: 2.1875rem;
+}
+.filter-item-modal{
+    width: 32%;
+    height: 2.1875rem;
+    margin-right: 0.4296rem;
 }
 .all-cursor{
     cursor: pointer;
@@ -239,6 +285,7 @@ header #header-menu > ul > li > a > i{
     right: 0;
     top: 65%;
     background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 160.75%);
+    z-index: 2;
 }
 .list-gr .list-gr-item:hover a{
     color: #0085FF !important;
@@ -373,6 +420,9 @@ h3.blog-title{
     line-height: 1rem !important;
     margin-top: 0.375rem;
 }
+.hidepc1{
+    display: none !important;
+}
 .blog-item .blog-des{
     color: #585757;
 }
@@ -414,10 +464,76 @@ h3.blog-title{
 .bg-sale{
     background: #F0F8FF;
 }
-/* .hide-pc{
-    display: none;
-} */
+.mt12pc{
+    margin-top: 0.75rem !important;
+}
+.mb320-sim{
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+.mr-16{
+    margin-right: 1rem;;
+}
+.border-new {
+    border-bottom: #000000;
+}
 /* Mobile */
+.body_mobile .mbd-block{
+    display: block !important;
+}
+.body_mobile .mbcenter{
+    display: block;
+    margin: 0 auto;
+}
+.body_mobile .btn-order{
+    max-width: 100%;
+    width: 100%;   
+}
+.body_mobile .order-info{
+    margin-left: 0.5rem;
+}
+.body_mobile .form-order{
+    margin-left: 0.5rem;
+}
+.body_mobile .title .title-icon {
+    width: 2.8125rem;
+    height: 2.8125rem;
+}
+.body_mobile .fs-17{
+    font-size: 1.0625rem !important;
+}
+.body_mobile .mbfs-18{
+    font-size: 1.125rem !important;
+}
+.body_mobile .mbfs-13{
+    font-size: 0.8125rem !important;
+}
+.body_mobile .mbmy-4{
+    margin: 0.25rem 0;
+}
+.body_mobile .mbpx-0{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.body_mobile .mbpr-1{
+    padding-right: 1rem !important;
+}
+.body_mobile .mbkeyword{
+    overflow-x:  auto;
+}
+.body_mobile .mbkeyword::-webkit-scrollbar{
+    display: none;
+}
+.body_mobile .filter-item-modal{
+    width: 31%;
+}
+.body_mobile .mb-sort{
+    display: flex;
+    margin: 0.5rem 0;
+}
+.body_mobile .mt12pc{
+    margin-top: 0 !important;
+}
 .body_mobile #header-menu .bg-menu{
     order: 2;
 }
@@ -467,7 +583,7 @@ h3.blog-title{
 }
 .body_mobile .mb-title{
     margin-bottom: 0.1875rem !important;
-    margin-top: -0.375rem !important;
+    margin-top: -0.175rem !important;
 }
 .body_mobile .mb-title .mb-title-sub{
     text-align: justify !important;
@@ -497,6 +613,10 @@ h3.blog-title{
 }
 .body_mobile .main-2{
     order: 2 !important;
+
+}
+.body_mobile .mb-mt20{
+    margin-top: 1.25rem;
 }
 .body_mobile .hide{
     display: none;
@@ -510,5 +630,195 @@ h3.blog-title{
 }
 .body_mobile .bg-menu{
     /* margin-top: 3.125rem; */
+}
+.body_mobile #nav-img{
+    overflow-x: auto;
+    margin-bottom: 0;
+    margin-top: 0.8rem;
+    margin-left: -1.22rem;
+}
+.body_mobile #nav li{
+    min-width: 6.9175rem;
+}
+.body_mobile .btn-more{
+    width: 100%;
+    height: 2.8125rem;
+    border-top: 0;
+}
+.body_mobile .btn-px-1{
+    padding: 0.0625rem;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+.body_mobile .mb-mr-13{
+    margin-right: -0.8125rem;
+}
+.body_mobile .bar_ovl{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    max-width: 100%;
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.body_mobile .bar_mobile{
+    background: #FFFFFF;
+    height: 414px;
+    width: 85%;
+    position: fixed;
+    color: #151515;
+    max-width: 100%;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 30%);
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transform: translatex(-100%);
+    transition: transform linear 0.2s;
+    opacity: 0;
+    display: block;
+
+}
+.body_mobile .bar-list{
+    margin-top: 24px;
+}
+.body_mobile .head-bar a{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+}
+.body_mobile .bar-link{
+   text-decoration: none;
+   color: #333;
+   display: block;
+   padding: 3px 0;
+   padding-right: 20px;
+   font-size: 1.4rem;
+}
+.body_mobile .bar-close{
+    font-size: 1.4rem;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 28px;
+    height: 28px;
+    top: 7px;
+    right: 0;
+}
+.body_mobile .danh-mucsim{
+   color: #000000;
+   margin-right: 189px;
+}
+.body_mobile .danh-muc{
+   color: #000000;
+   margin-right: 212px;
+}
+.body_mobile .bar-left{
+   text-align: left !important;
+}
+.body_mobile .pos-icon{
+   top: 13px;
+   right: 15px;
+}
+.body_mobile .header-category .bar-btn:checked ~ .bar_ovl{
+   display: block;
+}
+.body_mobile .bar-btn:checked ~ .bar_mobile{
+   transform: translateX(0);
+   opacity: 1;
+}
+.body_mobile hr{
+    display: none;
+}
+.body_mobile .ps3-mb{
+    padding-left: 1rem;
+}
+.body_mobile .mb320-sim{
+    margin-bottom: 0 !important;
+}
+.body_mobile .reddi, .viettel{
+    padding-left: 0.375rem;
+}
+.body_mobile .bg-search{
+    z-index: 1000;
+    position: fixed;
+}
+.body_mobile .bg-menu{
+    margin-top: 3.1875rem;
+}
+.body_mobile .mb-mt-0{
+    margin-top: 0 !important;
+}
+.body_mobile .mb-pt-0{
+    padding-top: 0 !important;
+}
+.body_mobile .thanh-toan{
+    padding-left: 0;
+}
+.body_mobile .tai-khoan{
+    padding-left: 0;
+}
+.body_mobile .mbml-10{
+    margin-left: 0.625rem;
+}
+.body_mobile .mbmt-12{
+    margin-top: 0.75rem;
+}
+.body_mobile .mbmt-8{
+    margin-top: 0.5rem !important;
+}
+.body_mobile .mbfs17{
+    font-size: 1.0625rem !important;
+}
+.body_mobile .mbmr-3{
+    margin-right: -0.1875rem;
+}
+.body_mobile .mbmr-4{
+    margin-right: 0.25rem;
+}
+.body_mobile .mbpr-0{
+    padding-right: 0!important;
+}
+@media (min-width: 64.0625rem){
+    .hidepc{
+        display: none;
+    }
+    .bar_mobile{
+        display: none;
+    }
+}
+@media (min-width: 48rem){
+    .body_mobile .prd-list .prd-item {
+        width: 24% !important;
+    }
+}
+@media (max-width: 21.25rem){
+
+    .fs-16-320{
+        font-size: 1rem !important;
+    }
+    .viettel{
+        background-position: center;
+    }
+    .gmobile, .reddi, .viettel, .vietnamobile, .itelecom, .vinaphone, .mobifone{
+        background-position: center;
+    }
+    .body_mobile .title .title-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    .body_mobile .fs320-15{
+        font-size: 0.9375rem !important;
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 

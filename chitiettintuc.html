@@ -19,7 +19,7 @@
         <div class="container">
             <div id="header-menu">
                 <div class="row">
-                    <div class="col-md-7 bg-menu rounded-3">
+                    <div class="col-sm-12 col-md-12 col-lg-7 bg-menu">
                         <ul id="nav" class="menu-list">
                             <li class="menu-item text-center">
                                 <a href="trangchu.html" class="fs-13 text-decoration-none cl-1515"><i class="fs-18 fas fa-home-lg-alt"></i><br />Trang chủ</a>
@@ -50,11 +50,66 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-5 bg-search d-flex align-items-center rounded-3">
-                        <div class="header-category cl-FFFF fs-14">
-                            <i class="fas fa-bars me-1"></i>
-                            <span class="text-uppercase me-2">Danh mục sim</span>
-                        </div>
+                    <div class="col-sm-12 col-md-12 col-lg-5 bg-search d-flex align-items-center">
+                        <div class="header-category cl-FFFF fs-14 position-relative">
+                            <label for="bar-id" class="all-cursor">
+                                <i class="fas fa-bars me-1"></i>
+                            </label>
+                            <span class="text-uppercase me-2 mobile-txtsim">Danh mục sim</span>
+                            <!-- Nav Mobile -->
+                            <input type="checkbox" hidden class="bar-btn" id="bar-id">
+                            <label for="bar-id" class="bar_ovl"></label>
+                            <nav class="bar_mobile">
+                                <ul class="bar-list ps-0 mt-0">
+                                    <div class="head-bar py-2 mb-1 position-relative">
+                                        <a href="#"
+                                            class="text-decoration-none d-block text-left fs-18 fw700 pb-2 khosimcom cl-0000 ps-2">Khosim.com</a>
+                                        <label class="bar-close position-absolute all-cursor" for="bar-id">
+                                            <i class="far fa-times all-cursor"></i>
+                                        </label>
+                                    </div>
+                                    <div class="bar-danhmuc">
+                                        <div class="mt-1">
+                                            <a href="#"
+                                                class="text-decoration-none d-block text-left fs-15 fw700 py-1 cl-0000 text-uppercase bg-F5F5 ps-2">Danh mục sim</a>
+                                        </div>
+                                        <div class="list-group bar-left">
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action text-decoration-none fs-15 position-relative cl-3333"
+                                                aria-current="true"><i class="far fa-sim-card fs-20 me-2"></i>Sim theo nhà mạng <i
+                                                    class="fas fa-caret-down fs-18 position-absolute pos-icon"></i></a>
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action text-decoration-none fs-15 position-relative cl-3333"><i
+                                                    class="far fa-sim-card fs-20 me-2"></i>Sim theo giá<i
+                                                    class="fas fa-caret-down fs-18 position-absolute pos-icon"></i></a>
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action text-decoration-none fs-15 position-relative cl-3333"><i
+                                                    class="far fa-sim-card fs-20 me-2"></i>Sim theo loại<i
+                                                    class="fas fa-caret-down fs-18 position-absolute pos-icon"></i></a>
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action text-decoration-none fs-15 position-relative cl-3333"><i
+                                                    class="far fa-sim-card fs-20 me-2"></i>Sim theo năm sinh<i
+                                                    class="fas fa-caret-down fs-18 position-absolute pos-icon"></i></a><i class=""></i>
+                                        </div>
+                                    </div>
+                                    <div class="bar-danhmuc">
+                                        <div class="mt-1 bg-danger">
+                                            <a href="#"
+                                                class="text-decoration-none d-block text-left fs-15 fw700 py-1 cl-0000 text-uppercase bg-F5F5 ps-2">Danh mục</a>
+                                        </div>
+                                        <div class="list-group bar-left">
+                                            <a href="#" class="list-group-item list-group-item-action text-decoration-none fs-15 cl-3333"
+                                                aria-current="true"><i class="far fa-credit-card fs-20 me-2"></i>Đặt mua & thanh toán</a>
+                                            <a href="#" class="list-group-item list-group-item-action text-decoration-none fs-15 cl-3333"><i
+                                                    class="fas fa-newspaper fs-20 me-2"></i>Tin tức</a>
+                                            <a href="#" class="list-group-item list-group-item-action text-decoration-none fs-15 cl-3333"><i
+                                                    class="fas fa-address-card fs-20 me-2"></i>Liên hệ</a>
+                                        </div>
+                                    </div>
+                            
+                                </ul>
+                            </nav>
+                            </div>
                         <div class="header-search position-relative">
                             <div class="form-row">
                                 <input type="text" class="form-control form-control-sm fs-16 "
@@ -71,49 +126,33 @@
 
     <main>
         <div class="container mb-4">
-            <div class="row mt-3 rounded-3">
-                <div class="col-12 bg-white rounded-3 py-3">
-                    <h1 class="fs-18 fw-bold cl-1515 ms-2">Sim số đẹp</h1>
-                    <p class="fs-14 ms-2">
-                        <span class="fs-14">Kho sim số đẹp lên đến <span class="text-uppercase fs-14 fw-bold">19.000.000 sim</span>... đa dạng về chủng loại, có nhiều mức giá, cho bạn thỏa sức chọn số <strong class="text-uppercase fs-16 fw500">khosim.com.</strong></span>
-                    </p>
-                    <ul class="logo-list d-flex align-items-center justify-content-between p-0 ms-0 ps-2">
-                        <li class="logo-item">
-                            <a href="ketquatimsim.html" class="text-decoration-none">
-                                <img src="./imgs/logosquare/mobiphone-01.svg" alt="Mobifone" class="border">
-                            </a>
-                        </li>
-                        <li class="logo-item">
-                            <a href="ketquatimsim.html" class="text-decoration-none">
-                                <img src="./imgs/logosquare/vietnamobile-01.svg" alt="Vietnamobile" class="border">
-                            </a>
-                        </li>
-                        <li class="logo-item">
-                            <a href="ketquatimsim.html" class="text-decoration-none">
-                                <img src="./imgs/logosquare/vinaphone-01.svg" alt="Vinaphone" class="border">
-                            </a>
-                        </li>
-                        <li class="logo-item">
-                            <a href="ketquatimsim.html" class="text-decoration-none">
-                                <img src="./imgs/logosquare/viettel.svg" alt="Mobifone" class="border">
-                            </a>
-                        </li>
-                        <li class="logo-item">
-                            <a href="ketquatimsim.html" class="text-decoration-none">
-                                <img src="./imgs/logosquare/indochina-01.svg" alt="Mobifone" class="border">
-                            </a>
-                        </li>
-                        <li class="logo-item">
-                            <a href="ketquatimsim.html" class="text-decoration-none">
-                                <img src="./imgs/logosquare/mobile.svg" alt="Mobifone" class="border">
-                            </a>
-                        </li>
-                        <li class="logo-item">
-                            <a href="ketquatimsim.html" class="text-decoration-none">
-                                <img src="./imgs/logosquare/reddi-01.svg" alt="Mobifone" class="border">
-                            </a>
-                        </li>
-                    </ul>
+            <div class="row mt-3 rounded-3 mobile-mt-0 hide">
+                <div class="col-12 bg-white rounded-3 py-3 mb-pt-0">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <ul id="nav-img" class="img-list d-flex align-items-center justify-content-between ps-2 mb-mt-0">
+                            <li class="img-item text-center border">
+                                <a href="ketquatimsim.html" class="fs-13 text-decoration-none cl-1515"><div class="img-mobi"></div></a>
+                            </li>
+                            <li class="img-item text-center border">
+                                <a href="ketquatimsim.html" class="fs-13 text-decoration-none cl-1515"><div class="img-vietnam"></div></a>
+                            </li>
+                            <li class="img-item text-center border">
+                                <a href="ketquatimsim.html" class="fs-13 text-decoration-none cl-1515"><div class="img-vina"></div></a>
+                            </li>
+                            <li class="img-item text-center border">
+                                <a href="ketquatimsim.html" class="fs-13 text-decoration-none cl-1515"><div class="img-viettel"></div></a>
+                            </li>
+                            <li class="img-item text-center border">
+                                <a href="ketquatimsim.html" class="fs-13 text-decoration-none cl-1515"><div class="img-itele"></div></a>
+                            </li>
+                            <li class="img-item text-center border">
+                                <a href="ketquatimsim.html" class="fs-13 text-decoration-none cl-1515"><div class="img-gmobi"></div></a>
+                            </li>
+                            <li class="img-item text-center border">
+                                <a href="ketquatimsim.html" class="fs-13 text-decoration-none cl-1515"><div class="img-reddi"></div></a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="price-list d-flex flex-wrap justify-content-between ps-0 fs-14">
                         <div class="price-item"><a href="#" class="text-decoration-none ps-2">Dưới 500 ngàn</a></div>
                         <div class="price-item"><a href="#" class="text-decoration-none ps-2">Từ 500-1 triệu</a></div>
@@ -138,22 +177,224 @@
                                 <a class="dropdown-item px-3 py-2" href="#">Giá thấp đến cao</a>
                             </div>
                         </div>
-                        <div class="price-item"><a type="button" class="dropdown-toggle text-decoration-none ps-2"
-                                data-bs-toggle="dropdown" aria-expanded="false">Bộ lọc</a>
-                            <div class="dropdown-menu dropdown-filter py-0" style="min-width: 187px;">
-                                <div class="dropdown-item d-flex justify-content-between align-items-center px-3"
-                                    href="#">
-                                    <a class="active text-decoration-none" href="#" style="color: red;">Tất cả</a>
-                                    <span class="badge pe-0"><i class="far fa-times-circle"></i></span>
+                        <div class="price-item">
+                            <a class="dropdown-toggle text-decoration-none ps-2 all-cursor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Bộ lọc
+                            </a>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="modal-title" id="exampleModalLabel">
+                                                <div class="filter">
+                                                    <span class="fs-18 fw-bold" style="color: #002257;"><i class="fal fa-filter" style="color: #002257;"></i> Bộ lọc</span>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <form action="#" method="post">
+                                                    <div class="col-12 mb-1">
+                                                        <span class="fs-14 fw400">Chọn số sim</span>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <input type="text" class="form-control form-control-sm fs-14"
+                                                            placeholder="Nhập số sim bạn cần tìm...">
+                                                    </div>
+                                                    <div class="col-12 mb-1">
+                                                        <span class="fs-14 fw400">Chọn giá tiền</span>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <div class="form-row">
+                                                            <div class="input-group">
+                                                                <div class="col-6 pe-1">
+                                                                    <input type="text" placeholder="Giá từ"
+                                                                        class="form-control form-control-sm fs-14">
+                                                                </div>
+                                                                <div class="col-6 ps-1">
+                                                                    <input type="text" placeholder="Giá đến"
+                                                                        class="form-control form-control-sm fs-14">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span class="fs-14 fw400">Chọn nhà mạng</span>
+                                                    </div>
+                                                    <div class="col-12 mb-2 mt-2">
+                                                        <div class="input-group">
+                                                            <label
+                                                                class="filter-item-modal border-filter d-flex align-items-center justify-content-start all-cursor rounded-3">
+                                                                <input type="checkbox" hidden name="mobifone" id="chkmobifone"
+                                                                    class="chkborder">
+                                                                <label for="chkmobifone" class="fs-14 fw500 ps-3 all-cursor"> <span
+                                                                        class="mobi"> Mobi<span class="fone">fone</span></span> </label>
+                                                            </label>
+                                                            <label
+                                                                class="filter-item-modal border-filter d-flex align-items-center justify-content-start all-cursor rounded-3">
+                                                                <input type="checkbox" hidden name="vinaphone" id="chkvinaphone">
+                                                                <label for="chkvinaphone" class="fs-14 fw500 ps-3 all-cursor"> <span
+                                                                        class="vina"> Vinaphone</span> </label>
+                                                            </label>
+                                                            <label
+                                                                class="filter-item-modal border-filter d-flex align-items-center justify-content-start all-cursor rounded-3">
+                                                                <input type="checkbox" hidden name="itelecom" id="chkitelecom">
+                                                                <label for="chkitelecom" class="fs-14 fw500 ps-3 all-cursor"> <span
+                                                                        class="itelecom"> iTelecom</span> </label>
+                                                            </label>
+                                                        </div>
+                                                        <div class="input-group mt-2">
+                                                            <label
+                                                                class="filter-item-modal border-filter d-flex align-items-center justify-content-start all-cursor rounded-3">
+                                                                <input type="checkbox" hidden name="Vietnamobile" id="chkvietnamobile">
+                                                                <label for="chkvietnamobile" class="fs-14 fw500 ps-3 all-cursor"> <span
+                                                                        class="vnmb"> Vietnamobile</span> </label>
+                                                            </label>
+                                                            <label
+                                                                class="filter-item-modal border-filter d-flex align-items-center justify-content-start all-cursor rounded-3">
+                                                                <input type="checkbox" hidden name="viettel" id="chkviettel">
+                                                                <label for="chkviettel" class="fs-14 fw500 ps-3 all-cursor"> <span
+                                                                        class="viettel"> Viettel</span> </label>
+                                                            </label>
+                                                            <label
+                                                                class="filter-item-modal border-filter d-flex align-items-center justify-content-start all-cursor rounded-3">
+                                                                <input type="checkbox" hidden name="mobifone" id="chkgmobile">
+                                                                <label for="chkgmobile" class="fs-14 fw500 ps-3 all-cursor"> <span
+                                                                        class="gmobile"> Gmobile</span> </label>
+                                                            </label>
+                                                            <label
+                                                                class="filter-item-modal border-filter d-flex align-items-center justify-content-start all-cursor rounded-3 mt-2">
+                                                                <input type="checkbox" hidden name="reddi" id="chkreddi">
+                                                                <label for="chkreddi" class="fs-14 fw500 ps-3 all-cursor"> <span
+                                                                        class="reddi"> Reddi</span> </label>
+                                                            </label>
+                                                            <label
+                                                            class="filter-item-modal border-filter d-flex align-items-center justify-content-start all-cursor rounded-3 mt-2">
+                                                            <input type="checkbox" hidden name="all" id="chkall">
+                                                            <label for="chkall" class="fs-14 fw500 ps-3 all-cursor"> <span
+                                                                    class="itelecom"> Tất cả</span> </label>
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 ">
+                                                        <span class="fs-14 fw400">Dãy số không gồm:</span>
+                                                    </div>
+                                                    <div class="col-12 mb-1">
+                                                        <div class="input-group d-flex justify-content-start">
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num1" id="chkds1"> <label for="chkds1"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num2" id="chkds2"> <label for="chkds2"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">2</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num3" id="chkds3"> <label for="chkds3"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">3</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num4" id="chkds4"> <label for="chkds4"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">4</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num5" id="chkds5"> <label for="chkds5"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">5</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num6" id="chkds6"> <label for="chkds6"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">6</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num7" id="chkds7"> <label for="chkds7"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">7</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num8" id="chkds8"> <label for="chkds8"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">8</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num9" id="chkds9"> <label for="chkds9"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">9</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span class="fs-14 fw400">Đầu số: </span>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <div class="input-group d-flex justify-content-start">
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center"> <input
+                                                                    type="checkbox" name="num09" id="chk09"> <label for="chk09"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">09</span>
+                                                                </label> </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2 ms-2">
+                                                                <input type="checkbox" name="num03" id="chk03"> <label for="chk03"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">03</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num05" id="chk05"> <label for="chk05"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">05</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num07" id="chk07"> <label for="chk07"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">07</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="all-cursor d-flex justify-content-center align-items-center me-2">
+                                                                <input type="checkbox" name="num08" id="chk08"> <label for="chk08"
+                                                                    class="fs-13 fw400 all-cursor"> <span class="ps-1">08</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mb-2 mt-3">
+                                                        <div class="form-row">
+                                                            <div class="input-group cl-blue change-cl">
+                                                                <div class="col-6 pe-1">
+                                                                    <input type="text" placeholder="Tổng điểm: < 81"
+                                                                        class="form-control form-control-sm text-center change-border fs-14">
+                                                                </div>
+                                                                <div class="col-6 ps-1">
+                                                                    <input type="text" placeholder="Tổng nút: 1 - 10"
+                                                                        class="form-control form-control-sm text-center change-border fs-14">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-3">
+                                                        <div class="rounded-3 d-flex align-items-center justify-content-end">
+                                                            <input type="submit" value="Tìm sim"
+                                                                class="btn btn-primary btn-sm btn-search cl-FFFF fs-16 text-uppercase">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        </div>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-4">
-                    <div class="box-1 bg-white rounded-3">
+            
+            <div class="row mt12pc">
+                <div class="col-12 col-lg-4 main-2 mb-mt20 hide">
+                    <div class="box-1 bg-white rounded-3 mb-mr-13">
                         <div class="row">
                             <div class="col-12">
                                 <div class="filter py-3">
@@ -342,7 +583,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="box-2 bg-white rounded-3 mt-3">
+                    <div class="box-2 bg-white rounded-3 mt-3 mb-mt20 mb-mr-13">
                         <div class="row">
                             <div class="col-12">
                                 <div class="filter pt-3 pb-3 d-flex">
@@ -480,7 +721,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="box-3 bg-white rounded-3 mt-3 pb-2">
+                    <div class="box-3 bg-white rounded-3 mt-3 pb-2 mb-mt20 mb-mr-13">
                         <div class="row">
                             <div class="col-12">
                                 <div class="filter pt-3 pb-3 d-flex">
@@ -566,7 +807,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box-4 bg-white rounded-3 mt-3 pb-2">
+                    <div class="box-4 bg-white rounded-3 mt-3 pb-2 mb-mt20 mb-mr-13">
                         <div class="row">
                             <div class="col-12">
                                 <div class="filter pt-3 pb-3 d-flex">
@@ -610,7 +851,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box-5 mt-3 rounded-3">
+                    <div class="box-5 mt-3 rounded-3 mb-mr-13">
                         <div class="row">
                             <div class="col-12 bg-white rounded-3">
                                 <div class="blog-1 position-relative">
@@ -630,22 +871,28 @@
                                     
                                 </ul>
                             </div>
+                            <div class="col-12 d-flex align-items-center justify-content-center mt-3 border-top pt-3 btn-px-1 hidepc">
+                                <div class="btn-more d-flex align-items-center position-relative all-cursor">
+                                    <a href="ketquatimsim.html" class="text-decoration-none cl-FFFF fs-15 fw-bold ms-auto me-auto">Xem thêm &nbsp;<i class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
-                <div class="col-8 bg-white ">
-                    <div class="row pb-2 rounded px-3 pt-2">
-                        <div class="sub-title">
+                <div class="col-12 col-lg-8 bg-white">
+                    <div class="row pb-2 rounded px-3 pt-2 mbpx-0">
+                        <div class="sub-title mbfs-13 mbmy-4">
                             <a href="tintuc.html" class="text-decoration-none cl-7E82 fs-13">Tin tức &nbsp;/&nbsp; </a>
-                            <a href="chitiettintuc.html" class="text-decoration-none cl-1515">Đăng ký Big70 Vinaphone - Xem phim miễn phí</a>
+                            <a href="chitiettintuc.html" class="text-decoration-none cl-1515">Đăng ký Big70 Vinaphone - Xem phim miễn phí</a>
                         </div>
-                        <h1 class="fw-bold fs-24 mt-2">Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn</h1>
+                        <h1 class="fw-bold fs-24 mt-2 mbfs-18">Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn</h1>
                         <div class="sub-header">
                             <span class="text-muted"><i class="fas fa-calendar-week cl-0085"></i>&nbsp;&nbsp;22-02-2021</span>&nbsp;&nbsp;&nbsp;
                             <span class="text-muted"><i class="fas fa-comments cl-0085"></i> (28) Bình luận</span>
                         </div>
                     </div>
-                    <div class="row mt-1 blog-detail px-3">
+                    <div class="row mt-1 blog-detail px-3 mbpx-0">
                         <div class="col-12">
                             <p class="cl-5857">Sim 8 nút giá rẻ là lựa chọn được ưu tiên hàng đầu của nhiều người khi lựa chọn cho mình một chiếc sim phục vụ công việc và cuộc sống. Tuy nhiên nhiều người vẫn chưa hiểu rõ về loại sim này.</p>
                             <p class="mb-0 py-1"><span class="cl-0085 fs-18"><strong>Sim 8 nút là gì? </strong></span></p>
@@ -656,7 +903,7 @@
                             <p><span>Luật tương sinh trong ngũ hành: Kim sinh Thủy, Thủy sinh ra Mộc, Mộc sinh Hỏa, Hỏa lại sinh ra Thổ</span></p>
                             <p><span>Luật tương khắc trong ngũ hành: Kim sẽ khắc Mộc, Mộc lại khắc Thổ, Thổ khắc Thủy còn Thủy sẽ khắc Hỏa và Hỏa lại khắc Kim.</span></p>
                             <p style="text-align: center"><span class="fs-18 cl-0000"><strong><img src="./imgs/khosim-02/goi-v90n-viettel-la-gi-1.svg" alt="Đăng ký gói Mimax450 Viettel ưu đãi mỗi tháng 5GB Data tốc độ cao trong 6 tháng" class="d-block mw-100 ms-auto me-auto" style="width: 100%;"></strong></span></p>
-                            <p class="d-flex align-items-center justify-content-around"><span><i class="fs-24 fas fa-images"></i></span><span class="fw-bold cl-4545">Đăng ký gói Mimax450 Viettel ưu đãi mỗi tháng 5GB Data tốc độ cao trong 6 tháng</span></p>
+                            <p class="d-flex align-items-center justify-content-around"><span><i class="fs-24 fas fa-images mbpr-1"></i></span><span class="fw-bold cl-4545">Đăng ký gói Mimax450 Viettel ưu đãi mỗi tháng 5GB Data tốc độ cao trong 6 tháng</span></p>
                             <p><span class="cl-4545">Dựa vào quy luật trên ta có thể hiểu với sim 8 nút thuộc mệnh thổ sẽ hợp với chính người mệnh thổ và hợp người mệnh Kim. Với người thuộc mệnh thổ và mệnh kim bạn sẽ nhận được nhiều may mắn trong làm ăn kinh doanh, mang lại sự phát triển và tiền tài.</span></p>
                             <p><span class="cl-4545">Vì thổ khắc thủy và mộc khắc thổ nên những người thuộc hai mệnh thủy và mộc không nên sử dụng sim 8 nút giá rẻ vì dễ gặp bất lợi và khó khăn trong cuộc sống và công việc.</span></p>
                             <p><span class="cl-4545">Hiện nay khosim.com đang trở thành lựa chọn hàng đầu của những người có ý định “tậu” cho mình một “em sim” để phục vụ cuộc sống và công việc. Vậy lý do gì để khách hàng tin tưởng khosim.com?</span></p>
@@ -671,10 +918,10 @@
                                     <span class="sepa-xt position-absolute"></span>
                                 </div>
                                 <div class="list-xemthem my-2">
-                                    <p><i class="fas fa-arrow-circle-right pe-3 pt-3 cl-0085"></i><a href="chitiettintuc.html" class="cl-1515 text-decoration-none list-xt-a">Cách đăng ký dịch vụ nhạc chờ Funringmobifone Cách đăng ký dịch vụ</a></p>
-                                    <p><i class="fas fa-arrow-circle-right pe-3 cl-0085"></i><a href="chitiettintuc.html" class="cl-1515 text-decoration-none">Cách đăng ký dịch vụ nhạc chờ Funringmobifone Cách đăng ký dịch vụ</a></p>
-                                    <p><i class="fas fa-arrow-circle-right pe-3 cl-0085"></i><a href="chitiettintuc.html" class="cl-1515 text-decoration-none">Cách đăng ký dịch vụ nhạc chờ Funringmobifone Cách đăng ký dịch vụ</a></p>
-                                    <p><i class="fas fa-arrow-circle-right pe-3 cl-0085"></i><a href="chitiettintuc.html" class="cl-1515 text-decoration-none">Cách đăng ký dịch vụ nhạc chờ Funringmobifone Cách đăng ký dịch vụ</a></p>
+                                    <p><i class="fas fa-arrow-circle-right pe-3 pt-3 cl-0085 hide"></i><a href="chitiettintuc.html" class="cl-1515 text-decoration-none list-xt-a">Cách đăng ký dịch vụ nhạc chờ Funringmobifone Cách đăng ký dịch vụ</a></p>
+                                    <p><i class="fas fa-arrow-circle-right pe-3 cl-0085 hide"></i><a href="chitiettintuc.html" class="cl-1515 text-decoration-none">Cách đăng ký dịch vụ nhạc chờ Funringmobifone Cách đăng ký dịch vụ</a></p>
+                                    <p><i class="fas fa-arrow-circle-right pe-3 cl-0085 hide"></i><a href="chitiettintuc.html" class="cl-1515 text-decoration-none">Cách đăng ký dịch vụ nhạc chờ Funringmobifone Cách đăng ký dịch vụ</a></p>
+                                    <p><i class="fas fa-arrow-circle-right pe-3 cl-0085 hide"></i><a href="chitiettintuc.html" class="cl-1515 text-decoration-none">Cách đăng ký dịch vụ nhạc chờ Funringmobifone Cách đăng ký dịch vụ</a></p>
                                 </div>
                             </div>
                         </div>
@@ -683,8 +930,8 @@
                         <div class="col-12">
                             <div class="d-flex justify-content-between">
                                 <div class="">
-                                    <span class="badge bg-like py-2 px-4 fs-13">Thích 99</span>
-                                    <span class="badge bg-face py-2 px-4 ms-1 fs-13" style="color: #005EB5;"><i class="fab fa-facebook-square"></i> Facebook</span>
+                                    <a href="#" class="badge text-decoration-none bg-like py-2 px-4 fs-13">Thích 99</a>
+                                    <a href="#" class="badge text-decoration-none bg-face py-2 px-4 ms-1 fs-13" style="color: #005EB5;"><i class="fab fa-facebook-square"></i> Facebook</a>
                                 </div>
                                 <div class="cl-1515 fw-bold">
                                     <span>Tên tác giả</span>
@@ -692,11 +939,76 @@
                             </div>
                         </div>
                         <div class="col-12 mt-3">
-                            <div class="">
-                                <span class="badge bg-key py-2 px-4 fs-13">Từ khoá&nbsp;</span>
-                                <span class="badge bg-sale py-2 px-4 cl-0085 ms-1 fw-normal fst-normal fs-14">Khuyến mãi tháng 3 Viettel</span>
-                                <span class="badge bg-sale py-2 px-4 cl-0085 ms-1 fw-normal fst-normal fs-14">Khuyễn mãi</span>
-                                <span class="badge bg-sale py-2 px-4 cl-0085 ms-1 fw-normal fst-normal fs-14">Viettel</span>
+                            <div class="d-flex mbkeyword" style="overflow-x: auto;">
+                                    <a href="#" class="badge text-decoration-none bg-key py-2 px-4 fs-13">Từ khoá&nbsp;</a>
+                                    <a href="#" class="badge text-decoration-none bg-sale py-2 px-4 cl-0085 ms-1 fw-normal fst-normal fs-14">Khuyến mãi tháng 3 Viettel</a>
+                                    <a href="#" class="badge text-decoration-none bg-sale py-2 px-4 cl-0085 ms-1 fw-normal fst-normal fs-14">Khuyễn mãi</a>
+                                    <a href="#" class="badge text-decoration-none bg-sale py-2 px-4 cl-0085 ms-1 fw-normal fst-normal fs-14">Viettel</a>
+                            </div>
+                        </div>
+                        <div class="col-12 hidepc1 mbd-block">
+                            <div class="list-blog mt-3 ps-0">
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                                <div class="list-blog-item d-flex align-items-center justify-content-between border-bottom pb-2 mt-2">
+                                    <a href="chitiettintuc.html" class="text-decoration-none cl-1515 fs-15 pe-5 mbpr-0"><span class="pe-2 cl-0085">•</span>Viettel khuyến mãi tặng data miễn phí và loạt ưu đãi hấp dẫn mừng Valentine</a>
+                                    <div class="cl-7575 fs-13 hide">20 phút trước</div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-12 d-flex align-items-center justify-content-center pt-4 hidepc1 mbd-block">
+                            <div class="btn-more d-flex align-items-center position-relative all-cursor">
+                                <a href="ketquatimsim.html" class="text-decoration-none cl-FFFF fs-15 fw-bold ms-auto me-auto">Xem thêm &nbsp;<i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -705,15 +1017,16 @@
         </div>
     </main>
 
+
     <footer class="container bg-white rounded-3">
         <div class="row pt-3">
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <p class="fs-14 cl-1515">Kho Sim số đẹp lớn nhất tại Việt Nam!</p>
                 <p class="fs-14 cl-1515"><a href="trangchu.html" class="text-decoration-none fs-14"><strong>khosim.com </strong></a>là trang web chuyên về số đẹp giá rẻ - Một dịch vụ của Công ty TNHH TMDV Viễn thông Kho Sim.</p>
             </div>
-            <div class="col-8">
+            <div class="col-12 col-lg-8">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <ul class="footer-menu ps-0">
                             <li><a href="trangchu.html" class="text-decoration-none fs-15 cl-3333 fw500">Trang chủ</a></li>
                             <li><a href="thanhtoan.html" class="text-decoration-none fs-15 cl-3333 fw500">Thanh toán</a></li>
@@ -721,30 +1034,30 @@
                             <li><a href="page404.html" class="text-decoration-none fs-15 cl-3333 fw500">Sim theo giá</a></li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <ul class="footer-menu ps-0">
                             <li><a href="tintuc.html" class="text-decoration-none fs-15 cl-3333 fw500">Sim theo loại</a></li>
                             <li><a href="khongcosim.html" class="text-decoration-none fs-15 cl-3333 fw500">Sim năm sinh</a></li>
                             <li><a href="datmua.html" class="text-decoration-none fs-15 cl-3333 fw500">Tin tức</a></li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 border-top-hr">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 col-lg-4">
                                 <ul class="footer-menu ps-0">
                                     <li><span class="text-decoration-none fs-15 cl-3333 fw500">Gọi mua hàng</span></li>
                                     <li><span class="text-decoration-none fs-15 cl-3333 fw500">Chat tư vấn</span></li>
                                     <li><span class="text-decoration-none fs-15 cl-3333 fw500">Gọi khiếu nại</span></li>
                                 </ul>
                             </div>
-                            <div class="col-4 ps-0">
+                            <div class="col-4 col-lg-4 ps-0">
                                 <ul class="footer-menu ps-0">
                                     <li><a title="1800.6189" href="tel:1800.6189" class="text-decoration-none fs-16 cl-FF00 fw-bold">1800.6189</a></li>
                                     <li><a title="Kho Sim" href="https://zalo.me/0838444422" target="_blank" rel="nofollow noopener noreferrer" class="footerzalo text-decoration-none cl-FFFF fs-14 fw700"><img src="./imgs/khosim-02/zalo-icon.svg" alt="Chat Zalo" class="ps-2"><span class="ps-2">Chat</span></a></li>
                                     <li><a title="0987.059.059" href="tel:0987.059.059" class="text-decoration-none fs-16 cl-FF00 fw-bold">0987.059.059</a></li>
                                 </ul>
                             </div>
-                            <div class="col-4 ps-0">
+                            <div class="col-4 col-lg-4 ps-0">
                                 <ul class="footer-menu ps-0">
                                     <li><span class="fs-14 cl-8C8C">(7:30 -22:00)</span></li>
                                     <li><span class="fs-14 cl-8C8C">(7:30 -22:00)</span></li>
@@ -763,7 +1076,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="./lib/js/jquery-3.1.1.min.js"></script>
+    <script src="./lib/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
         crossorigin="anonymous"></script>
